@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A2K Tourisms | We Create Memories</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+    font-family:'Poppins',sans-serif;
+    background:#000;
+    color:#fff;
+}
+
+nav{
+    position:fixed;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    padding:25px 8%;
+    background:rgba(0,0,0,0.8);
+    z-index:1000;
+}
+
+nav h2{
+    font-family:'Playfair Display',serif;
+    color:#d4af37;
+    letter-spacing:2px;
+}
+
+nav ul{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#fff;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#d4af37;
+}
+
+.hero{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-family:'Playfair Display',serif;
+    font-size:4rem;
+    color:#d4af37;
+}
+
+.hero p{
+    margin:20px 0;
+    font-size:1.3rem;
+}
+
+.btn{
+    padding:14px 35px;
+    border:2px solid #d4af37;
+    color:#d4af37;
+    text-decoration:none;
+    border-radius:30px;
+    transition:0.4s;
+}
+
+.btn:hover{
+    background:#d4af37;
+    color:#000;
+}
+
+section{
+    padding:100px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:60px;
+    font-family:'Playfair Display',serif;
+    color:#d4af37;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#111;
+    padding:25px;
+    border-radius:15px;
+    border:1px solid #222;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    border:1px solid #d4af37;
+}
+
+.card img{
+    width:100%;
+    border-radius:12px;
+    margin-bottom:20px;
+}
+
+.booking{
+    max-width:600px;
+    margin:auto;
+    background:#111;
+    padding:40px;
+    border-radius:20px;
+    border:1px solid #d4af37;
+}
+
+.booking input, .booking select{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:none;
+    border-radius:8px;
+}
+
+footer{
+    background:#111;
+    text-align:center;
+    padding:30px;
+    border-top:1px solid #d4af37;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<h2>A2K Tourisms</h2>
+<ul>
+<li><a href="#tours">Tours</a></li>
+<li><a href="#booking">Book</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+<div>
+<h1>We Create Memories</h1>
+<p>Luxury International Group Tours | Dubai | Thailand | Singapore</p>
+<a href="#booking" class="btn">Reserve Your Seat</a>
+</div>
+</section>
+
+<section id="tours">
+<h2 class="section-title">Signature Experiences</h2>
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c">
+<h3>Dubai Royal Experience</h3>
+<p>Burj Khalifa • Desert Safari • Marina Yacht • Luxury Stay</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1504215680853-026ed2a45def">
+<h3>Thailand Elite Escape</h3>
+<p>Coral Island • Alcazar Show • Safari World • Bangkok City</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98">
+<h3>Singapore Prestige Tour</h3>
+<p>Universal Studios • Sentosa • Marina Bay Sands</p>
+</div>
+
+</div>
+</section>
+
+<section id="booking">
+<h2 class="section-title">Luxury Booking</h2>
+
+<div class="booking">
+<form action="#">
+<input type="text" placeholder="Full Name" required>
+<input type="email" placeholder="Email Address" required>
+<input type="tel" placeholder="Phone Number" required>
+
+<select>
+<option>Dubai Royal Experience</option>
+<option>Thailand Elite Escape</option>
+<option>Singapore Prestige Tour</option>
+</select>
+
+<input type="number" placeholder="Number of Guests" required>
+
+<button class="btn" style="width:100%;background:none;">Confirm Reservation</button>
+</form>
+</div>
+</section>
+
+<section id="contact">
+<h2 class="section-title">Contact A2K Tourisms</h2>
+<p style="text-align:center;">📍 Maharashtra, India</p>
+<p style="text-align:center;">📞 +91 XXXXX XXXXX</p>
+<p style="text-align:center;">📧 info@a2ktourisms.com</p>
+<div style="text-align:center;margin-top:20px;">
+<a href="https://wa.me/91XXXXXXXXXX" class="btn">WhatsApp Us</a>
+</div>
+</section>
+
+<footer>
+© 2026 A2K Tourisms | We Create Memories
+</footer>
+
+</body>
+</html>
